@@ -34,6 +34,6 @@ print(df.columns)
 #df_sorted = df.sort_values('Rent', ascending=False)
 #print(df_sorted.head(17))
 
-#criando nova coluna de aluguel em dólares
-#df['Rent (Dollar)'] = df['Rent'] * 1.1
-#print(df.head(17))
+# aluguel em dólares
+df['Rent (Dollar)'] = df['Rent'] * 1.1
+print(df.head(17))
