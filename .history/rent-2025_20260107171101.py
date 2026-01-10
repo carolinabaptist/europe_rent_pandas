@@ -39,5 +39,5 @@ print(df.columns)
 #print(df.head(17))
 
 #Classificação com aplly
-#df['Category'] = df['Rent'].apply(lambda x: 'High' if x>2000 else 'Medium' if x>1000 else 'Low')
-#print(df.head(17))
+df['Category'] = df['Rent'].apply(lambda x: 'High' if x>2000 else 'Medium' if x>1000 else 'Low')
+print(df.head())
