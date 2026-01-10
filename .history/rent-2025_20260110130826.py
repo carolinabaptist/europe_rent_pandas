@@ -1,0 +1,43 @@
+import pandas as pd
+
+df = pd.read_excel('datasets/house-data.xlsx')
+print(df.head(10))
+#print(df.tail(5))
+
+# nomes das colunas
+print(df.columns)        
+# tipos de dados
+#print(df.dtypes)
+         
+# resumo do DataFrame
+#print(df.info())         
+
+# estatísticas básicas
+#print(df.describe())     
+
+# pegar só os nomes das cidades
+#print(df['City Centre']) 
+#print(df["Rent"].max())
+#print(df["Rent"].min())
+
+#print(df.iloc[5]) # em formato de Series, mostra a linha 5
+
+# cidades com aluguel acima de 2000€
+#high_rent = df[df['Rent'] > 2000]
+#print(high_rent)
+
+#ordenar dados
+#df_sorted = df.sort_values('Rent (€)', ascending=False)
+#print(df_sorted.head())
+
+#listar do mais caro para o mais barato
+#df_sorted = df.sort_values('Rent', ascending=False)
+#print(df_sorted.head(17))
+
+#criando nova coluna de aluguel em dólares
+#df['Rent (Dollar)'] = df['Rent'] * 1.1
+#print(df.head(17))
+
+#Classificação com aplly
+#df['Category'] = df['Rent'].apply(lambda x: 'High' if x>2000 else 'Medium' if x>1000 else 'Low')
+#print(df.head(17))

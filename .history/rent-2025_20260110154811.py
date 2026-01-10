@@ -10,9 +10,5 @@ df = pd.read_csv('datasets/housing.csv')
 #the goal is to predict medium_house_value (target)
 #the other variables are input variables
 
-#drops nan values and save it in the data object
 df.dropna(inplace=True)
 print(df.info())
-
-#train the model with part of the data e evaluate with the other part of the data
-from sklearn.model_selection import train_test_split

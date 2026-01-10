@@ -15,4 +15,4 @@ df.dropna(inplace=True)
 print(df.info())
 
 #train the model with part of the data e evaluate with the other part of the data
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection
