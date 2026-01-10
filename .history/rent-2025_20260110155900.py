@@ -17,13 +17,9 @@ df.dropna(inplace=True)
 #train the model with part of the data e evaluate with the other part of the data
 from sklearn.model_selection import train_test_split
 
-#x is the data frame without the target variable (features)
+#x is the data frame without the target variable
 
-x = df.drop(['median_house_value'], axis= 1)
+x = df.drop(['medium_house_value'], axis= 1)
 y = df['median_house_value']
 
-#x_train and y_train are data for the model to learn
-#x_test and y_test are data used to evaluate
-x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
-
-train_data = x_train.join(y_train)
+print(y)

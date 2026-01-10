@@ -27,3 +27,5 @@ y = df['median_house_value']
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
 
 train_data = x_train.join(y_train)
+
+print(train_data.hist())
